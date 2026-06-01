@@ -61,7 +61,7 @@ router.post('/', requireAuth, async (req: Request, res: Response) => {
     }).returning();
 
     await db.insert(orderItems).values(
-      orderItemsData.map(oi => ({ ...oi, orderId: order.id }))
+      orderItemsData.map((oi: Record<string, unknown>) => ({ ...oi, orderId: order.id }))
     );
 
     res.status(201).json({ ...order, items: orderItemsData });

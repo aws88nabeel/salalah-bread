@@ -62,11 +62,11 @@ export const orders = pgTable('orders', {
   totalAmount: decimal('total_amount', { precision: 8, scale: 3 }).notNull(),
   createdAt: timestamp('created_at', { withTimezone: true }).defaultNow(),
   updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow(),
-}, (table) => [
-  index('idx_orders_date_slot').on(table.deliveryDate, table.slotId),
-  index('idx_orders_status').on(table.status),
-  index('idx_orders_customer').on(table.customerId),
-]);
+}, (table) => ({
+  dateSlotIdx: index('idx_orders_date_slot').on(table.deliveryDate, table.slotId),
+  statusIdx: index('idx_orders_status').on(table.status),
+  customerIdx: index('idx_orders_customer').on(table.customerId),
+}));
 
 export const orderItems = pgTable('order_items', {
   id: uuid('id').primaryKey().defaultRandom(),
