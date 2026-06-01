@@ -93,6 +93,7 @@ Open **http://localhost:5173** in your browser.
 |---|---|---|
 | **Admin** | `96899990000` | `admin123` |
 | Customer | Register via the app | (your choice) |
+https://salalah-bread-frontend.vercel.app/
 
 ### Admin Access
 
