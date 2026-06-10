@@ -1,4 +1,4 @@
-# Salalah Bread 🥖
+# طلبات الخبز | Salalah Bread 🥖
 
 A fresh bread ordering web application for Salalah, Oman. Customers can browse a daily menu, select delivery time slots, and place orders for home delivery. Admins can manage orders through a dashboard workflow.
 

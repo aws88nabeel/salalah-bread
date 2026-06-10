@@ -22,7 +22,7 @@ export default function MenuPage() {
     return (
       <div className="text-center py-20">
         <div className="text-4xl mb-4">🍞</div>
-        <h2 className="text-xl font-semibold text-gray-700">مرحباً بك في خبز صلالة!</h2>
+        <h2 className="text-xl font-semibold text-gray-700">مرحباً بك في طلبات الخبز!</h2>
         <p className="text-gray-500 mt-2">قائمة الطعام غير متاحة حالياً، يرجى المحاولة لاحقاً</p>
       </div>
     );
@@ -32,7 +32,7 @@ export default function MenuPage() {
     return (
       <div className="text-center py-20">
         <div className="text-4xl mb-4">🍞</div>
-        <h2 className="text-xl font-semibold text-gray-700">مرحباً بك في خبز صلالة!</h2>
+        <h2 className="text-xl font-semibold text-gray-700">مرحباً بك في طلبات الخبز!</h2>
         <p className="text-gray-500 mt-2">لا توجد أصناف متاحة حالياً</p>
       </div>
     );

@@ -15,7 +15,7 @@ export default function Layout() {
       <header className="bg-white shadow-sm border-b sticky top-0 z-40">
         <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="text-xl font-bold text-primary-700">
-            🥖 خبز صلالة
+            🥖 طلبات الخبز
           </Link>
           <nav className="flex items-center gap-4 text-sm">
             <Link to="/" className={isActive('/')}>القائمة</Link>
@@ -52,7 +52,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer className="bg-white border-t py-4 text-center text-sm text-gray-500">
-        © 2026 خبز صلالة — طازج كل صباح
+        © 2026 طلبات الخبز — طازج كل صباح
       </footer>
     </div>
   );

@@ -30,7 +30,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-orange-50">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md mx-4">
         <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold text-primary-700">🥖 خبز صلالة</h1>
+          <h1 className="text-3xl font-bold text-primary-700">🥖 طلبات الخبز</h1>
           <p className="text-gray-500 mt-1">تسجيل الدخول</p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
