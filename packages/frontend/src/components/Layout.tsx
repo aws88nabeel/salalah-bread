@@ -52,7 +52,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer className="bg-white border-t py-4 text-center text-sm text-gray-500">
-        © 2024 خبز صلالة — طازج كل صباح
+        © 2026 خبز صلالة — طازج كل صباح
       </footer>
     </div>
   );
