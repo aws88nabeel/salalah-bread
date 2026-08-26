@@ -7,21 +7,45 @@
     scroll-behavior: smooth;
   }
   body {
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    background-color: #fafaf9;
+    color: #1c1917;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold py-2.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2;
   }
   .btn-secondary {
-    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2.5 px-6 rounded-lg transition-colors;
+    @apply bg-warm-100 hover:bg-warm-200 text-warm-800 font-semibold py-2.5 px-6 rounded-xl transition-all duration-200 active:scale-95 border border-warm-200 flex items-center justify-center gap-2;
+  }
+  .btn-outline {
+    @apply border-2 border-amber-600 text-amber-700 hover:bg-amber-50 font-semibold py-2.5 px-6 rounded-xl transition-all duration-200 active:scale-95 flex items-center justify-center gap-2;
   }
   .input-field {
-    @apply w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all;
+    @apply w-full border border-warm-200 bg-white rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all shadow-sm placeholder:text-warm-400 text-warm-900;
   }
   .card {
-    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4;
+    @apply bg-white rounded-2xl shadow-soft border border-warm-100 p-5 transition-all duration-200;
   }
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
 }
